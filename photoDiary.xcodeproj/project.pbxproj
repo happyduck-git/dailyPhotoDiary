@@ -16,6 +16,7 @@
 		2458E196278DDE7700534694 /* KCC-eunyoung.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2458E195278DDE7700534694 /* KCC-eunyoung.ttf */; };
 		2458E19A278E5EB100534694 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2458E199278E5EB100534694 /* MainViewController.swift */; };
 		2458E19C278E7A7100534694 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2458E19B278E7A7100534694 /* AddViewController.swift */; };
+		2458E19E278ED76800534694 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2458E19D278ED76800534694 /* Date+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		2458E195278DDE7700534694 /* KCC-eunyoung.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "KCC-eunyoung.ttf"; sourceTree = "<group>"; };
 		2458E199278E5EB100534694 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		2458E19B278E7A7100534694 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		2458E19D278ED76800534694 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 				2458E185278DD9D200534694 /* Main.storyboard */,
 				2458E18A278DD9D600534694 /* LaunchScreen.storyboard */,
 				2458E18D278DD9D600534694 /* Info.plist */,
+				2458E19D278ED76800534694 /* Date+Extension.swift */,
 			);
 			path = photoDiary;
 			sourceTree = "<group>";
@@ -169,6 +172,7 @@
 				2458E180278DD9D200534694 /* AppDelegate.swift in Sources */,
 				2458E182278DD9D200534694 /* SceneDelegate.swift in Sources */,
 				2458E19A278E5EB100534694 /* MainViewController.swift in Sources */,
+				2458E19E278ED76800534694 /* Date+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
