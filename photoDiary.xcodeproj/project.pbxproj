@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		2458E180278DD9D200534694 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2458E17F278DD9D200534694 /* AppDelegate.swift */; };
 		2458E182278DD9D200534694 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2458E181278DD9D200534694 /* SceneDelegate.swift */; };
-		2458E184278DD9D200534694 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2458E183278DD9D200534694 /* ViewController.swift */; };
+		2458E184278DD9D200534694 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2458E183278DD9D200534694 /* WelcomeViewController.swift */; };
 		2458E187278DD9D200534694 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2458E185278DD9D200534694 /* Main.storyboard */; };
 		2458E189278DD9D600534694 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2458E188278DD9D600534694 /* Assets.xcassets */; };
 		2458E18C278DD9D600534694 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2458E18A278DD9D600534694 /* LaunchScreen.storyboard */; };
+		2458E196278DDE7700534694 /* KCC-eunyoung.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2458E195278DDE7700534694 /* KCC-eunyoung.ttf */; };
+		2458E19A278E5EB100534694 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2458E199278E5EB100534694 /* MainViewController.swift */; };
+		2458E19C278E7A7100534694 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2458E19B278E7A7100534694 /* AddViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2458E17C278DD9D200534694 /* photoDiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = photoDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2458E17F278DD9D200534694 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2458E181278DD9D200534694 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2458E183278DD9D200534694 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2458E183278DD9D200534694 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		2458E186278DD9D200534694 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2458E188278DD9D600534694 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2458E18B278DD9D600534694 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2458E18D278DD9D600534694 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2458E195278DDE7700534694 /* KCC-eunyoung.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "KCC-eunyoung.ttf"; sourceTree = "<group>"; };
+		2458E199278E5EB100534694 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		2458E19B278E7A7100534694 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,34 @@
 		2458E17E278DD9D200534694 /* photoDiary */ = {
 			isa = PBXGroup;
 			children = (
+				2458E193278DDE2B00534694 /* Assets */,
 				2458E17F278DD9D200534694 /* AppDelegate.swift */,
 				2458E181278DD9D200534694 /* SceneDelegate.swift */,
-				2458E183278DD9D200534694 /* ViewController.swift */,
+				2458E183278DD9D200534694 /* WelcomeViewController.swift */,
+				2458E199278E5EB100534694 /* MainViewController.swift */,
+				2458E19B278E7A7100534694 /* AddViewController.swift */,
 				2458E185278DD9D200534694 /* Main.storyboard */,
-				2458E188278DD9D600534694 /* Assets.xcassets */,
 				2458E18A278DD9D600534694 /* LaunchScreen.storyboard */,
 				2458E18D278DD9D600534694 /* Info.plist */,
 			);
 			path = photoDiary;
+			sourceTree = "<group>";
+		};
+		2458E193278DDE2B00534694 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				2458E188278DD9D600534694 /* Assets.xcassets */,
+				2458E194278DDE3300534694 /* Fonts */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		2458E194278DDE3300534694 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				2458E195278DDE7700534694 /* KCC-eunyoung.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +150,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2458E196278DDE7700534694 /* KCC-eunyoung.ttf in Resources */,
 				2458E18C278DD9D600534694 /* LaunchScreen.storyboard in Resources */,
 				2458E189278DD9D600534694 /* Assets.xcassets in Resources */,
 				2458E187278DD9D200534694 /* Main.storyboard in Resources */,
@@ -138,9 +164,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2458E184278DD9D200534694 /* ViewController.swift in Sources */,
+				2458E19C278E7A7100534694 /* AddViewController.swift in Sources */,
+				2458E184278DD9D200534694 /* WelcomeViewController.swift in Sources */,
 				2458E180278DD9D200534694 /* AppDelegate.swift in Sources */,
 				2458E182278DD9D200534694 /* SceneDelegate.swift in Sources */,
+				2458E19A278E5EB100534694 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
