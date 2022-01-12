@@ -8,7 +8,9 @@
 import UIKit
 
 class AddViewController: UIViewController {
-
+    @IBOutlet var datePicker: UIDatePicker!
+    var dateF = DateFormatter()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.leftBarButtonItem?.tintColor = UIColor.black
@@ -20,7 +22,10 @@ class AddViewController: UIViewController {
         textViewDidEndEditing(captionTextView)
         hideKeyboardWhenTappedAround()
         
+       
     }
+    
+    
     
 
     @IBOutlet var captionTextView: UITextView!
@@ -45,9 +50,9 @@ extension AddViewController: UITextViewDelegate {
 
 }
 
-extension UIViewController {
+extension AddViewController {
     func hideKeyboardWhenTappedAround() {
-        let tap = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
+        let tap = UITapGestureRecognizer(target: self, action: #selector(AddViewController.dismissKeyboard))
         tap.cancelsTouchesInView = false
         view.addGestureRecognizer(tap)
     }
@@ -56,3 +61,5 @@ extension UIViewController {
         view.endEditing(true)
     }
 }
+
+

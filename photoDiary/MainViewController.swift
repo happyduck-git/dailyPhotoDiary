@@ -9,6 +9,7 @@ import UIKit
 
 class MainViewController: UIViewController {
 
+    @IBOutlet var testLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         
