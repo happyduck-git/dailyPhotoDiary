@@ -18,14 +18,16 @@ class AddViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         navigationItem.leftBarButtonItem?.tintColor = UIColor.black
         navigationItem.rightBarButtonItem?.tintColor = UIColor.black
+        hideKeyboardWhenTappedAround()
+        
         captionTextView.delegate = self
         imagePickerController.delegate = self
 
         textViewDidBeginEditing(captionTextView)
         textViewDidEndEditing(captionTextView)
-        hideKeyboardWhenTappedAround()
         
         //testLabel2에 현재 시간 자동으로 표시하기
         testLabel2.text = "\(datePicker.date.getHourMinute().hour): \(datePicker.date.getHourMinute().minute)"
@@ -44,17 +46,13 @@ class AddViewController: UIViewController {
             }else{
                 print("Camera not available")
             }
-
         }))
-        
         actionSheet.addAction(UIAlertAction(title: "Photo Library", style: .default, handler: { (action:UIAlertAction) in
             self.imagePickerController.sourceType = .photoLibrary
             self.present(self.imagePickerController, animated: true, completion: nil)
-            
         }))
         
         actionSheet.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
-        
         self.present(actionSheet, animated: true, completion: nil)
     }
 
@@ -66,7 +64,8 @@ class AddViewController: UIViewController {
     }
     
     @IBAction func uploadBtnPressed(_ sender: UIBarButtonItem) {
-        mainVC.testLabel?.text = hourAndMinute //고치기(mainVC testLabel에 값 안나옴.)
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "refresh"), object: nil)
+
     }
     
     @IBOutlet var captionTextView: UITextView!

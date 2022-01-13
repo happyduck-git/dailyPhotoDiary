@@ -10,6 +10,8 @@ import UIKit
 class MainViewController: UIViewController {
 
     @IBOutlet var testLabel: UILabel!
+    @IBOutlet var initialImage: UIImageView!
+    @IBOutlet var initialLabel: UILabel!
     
     
     override func viewDidLoad() {
@@ -17,21 +19,21 @@ class MainViewController: UIViewController {
         
         navigationItem.setHidesBackButton(true, animated: true)
         
+        NotificationCenter.default.addObserver(self,
+                                                   selector: #selector(refreshLbl),
+                                                   name: NSNotification.Name(rawValue: "refresh"),
+                                                   object: nil)
         
-
-        // Do any additional setup after loading the view.
     }
     
+    @objc func refreshLbl() {
+        print("Received Notification")
+        if initialLabel.isHidden == false && initialImage.isHidden == false{
+            initialLabel.isHidden = true
+            initialImage.isHidden = true
+        }
+    }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

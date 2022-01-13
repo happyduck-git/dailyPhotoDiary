@@ -70,10 +70,10 @@
 				2458E183278DD9D200534694 /* WelcomeViewController.swift */,
 				2458E199278E5EB100534694 /* MainViewController.swift */,
 				2458E19B278E7A7100534694 /* AddViewController.swift */,
+				2458E19D278ED76800534694 /* Date+Extension.swift */,
 				2458E185278DD9D200534694 /* Main.storyboard */,
 				2458E18A278DD9D600534694 /* LaunchScreen.storyboard */,
 				2458E18D278DD9D600534694 /* Info.plist */,
-				2458E19D278ED76800534694 /* Date+Extension.swift */,
 			);
 			path = photoDiary;
 			sourceTree = "<group>";

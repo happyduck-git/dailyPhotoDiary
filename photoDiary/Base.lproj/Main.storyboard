@@ -107,6 +107,8 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="initialImage" destination="VjU-sl-eiz" id="PyM-zy-W3A"/>
+                        <outlet property="initialLabel" destination="75M-rZ-6o3" id="Skt-8A-wec"/>
                         <outlet property="testLabel" destination="DEh-Tk-eXT" id="nQQ-yQ-3jf"/>
                     </connections>
                 </viewController>
